@@ -17,29 +17,34 @@
         /** quick fix because bootstrap <pre> has a background-color. */
         pre code { background-color: inherit; }
         </style>
+
+        <!-- get any stylsheets required in post -->
+        {% for sheet in page.stylesheets %}
+        <link href="{{ site.url }}/css/{{ sheet }}.css" rel="stylesheet" type="text/css" />
+        {% endfor %}
     </head>
     <body>
         <header>
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container-fluid">
-                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </a>
-                        <a class="brand" href="{{ site.url }}/">{{ site.title }}</a>
-                        <div class="nav-collapse collapse">
-                            <ul class="nav">
-                                <li><a href="{{ site.url }}/blog">Posts Archive</a></li>
-                                <li><a href="{{ site.url }}/blog/categories">Categories</a></li>
-                                <li><a href="{{ site.url }}/blog/tags">Tags</a></li>
-                                <li><a href="{{ site.url }}/about">About</a></li>
-                            </ul>
-                        </div><!--/.nav-collapse -->
-                    </div>
-                </div>
-            </div>
+            <!--<div class="navbar navbar-inverse navbar-fixed-top">-->
+                <!--<div class="navbar-inner">-->
+                    <!--<div class="container-fluid">-->
+                        <!--<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">-->
+                            <!--<span class="icon-bar"></span>-->
+                            <!--<span class="icon-bar"></span>-->
+                            <!--<span class="icon-bar"></span>-->
+                        <!--</a>-->
+                        <!--<a class="brand" href="{{ site.url }}/">{{ site.title }}</a>-->
+                        <!--<div class="nav-collapse collapse">-->
+                            <!--<ul class="nav">-->
+                                <!--<li><a href="{{ site.url }}/blog">Posts Archive</a></li>-->
+                                <!--<li><a href="{{ site.url }}/blog/categories">Categories</a></li>-->
+                                <!--<li><a href="{{ site.url }}/blog/tags">Tags</a></li>-->
+                                <!--<li><a href="{{ site.url }}/about">About</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>&lt;!&ndash;/.nav-collapse &ndash;&gt;-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
         </header>
         <div class="mainContent container">
             <div class="row-fluid">
@@ -53,8 +58,7 @@
                     <div class="well sidebar-nav">
                         <h4>Links</h4>
                         <ul class="nav">
-                            <li><a href="http://sculpin.io">sculpin.io</a></li>
-                            <li><a href="http://twitter.com/getsculpin">@getsculpin</a></li>
+                            <li><a href="http://j1ff.com">j1ff.com</a></li>
                         </ul>
                     </div>
                 </div>

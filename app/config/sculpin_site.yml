@@ -3,3 +3,4 @@
 # in a template to get the contents of the `title` key.
 title: motionpicture.js
 subtitle: A jquery plugin utilizing sprites to make animations
+url: http://j1ff.github.io/motionpicture.js
